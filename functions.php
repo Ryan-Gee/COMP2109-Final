@@ -89,7 +89,7 @@ function album_init(){
 
 add_action('init', 'album_init');
 
-//Add a shortcode
+//Add a shortcode for the upcoming albums
 function album() {
 	the_post();
 	echo "<a href=";
@@ -102,8 +102,10 @@ function album() {
 	echo "</div></a>";
 }
 
+//The function that adds the shortcode to wordpress
 function album_shortcode() {
 	add_shortcode('album_shortcode', 'album');
 }
 
+//Ensure that everything can use the album shortcode
 add_action('init','album_shortcode');
