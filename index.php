@@ -17,7 +17,9 @@
 				<a href="/album" class="title-link">I want to see what's next</a>
 			</header>
 			<div id="body">
+				<a href="./shop/"><h3 class="featured-title">Featured Products</h3></a>
 			<?php
+			echo do_shortcode("[featured_products]");
 			?>
 			</div>
 			<footer>

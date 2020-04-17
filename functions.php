@@ -73,6 +73,8 @@ function album_init(){
 		'query_var' => true,
 		'menu_icon' => 'dashicons-album',
 		'has_archive' => true,
+		'taxonomies' => array('post_tag', 'category'),
+
 		'supports' => array(
 			'title',
 			'editor',

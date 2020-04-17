@@ -1,6 +1,7 @@
 /*
 Theme Name: Subsurface
 Author: Ryan Gee
+Description: A custom theme designed for music stores. Created entirely by Ryan Gee for COMP2109's Major Project assignment.
 */
 @import url('https://fonts.googleapis.com/css?family=Abel|Lato&display=swap');
 
@@ -12,6 +13,20 @@ html {
 body {
     margin: 0px;
     font-family: 'Lato', sans-serif;
+}
+
+.taxonomy {
+    color: white;
+    margin-top: -10px;    
+}
+
+.taxonomy a {
+    color: white;
+    text-decoration: none;;
+}
+
+.t-first {
+    margin-top: 40px;
 }
 
 .menu {
@@ -52,7 +67,7 @@ body {
     display: flex;
 }
 
-.menu ul li:nth-child(4) {
+.menu ul li:nth-child(6) {
     margin-left: auto;
 }
 
@@ -227,6 +242,20 @@ form input, form textarea {
 .album-single-display h3 {
     width: 60%;
     margin: auto;
+}
+
+.featured-title {
+    color: white;
+    text-align:center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+.body-content {
+    color: white;
+    width: 60%;
+    margin: 0px 20%;
+    font-size: 120%;
 }
 
 .gradient-black {

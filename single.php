@@ -1,3 +1,5 @@
+<?php /* Template Name: Page Default */ ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,20 +11,16 @@
 	<body <?php body_class(); ?>>
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu' ) );?>
 		<div id="page">
-            <header class="album-single-display">
+            <header class="">
 				<?php the_post(); ?>
 				<div class="header-bg"></div>
 				<div class="thumbnail-header"><?php the_post_thumbnail(); ?></div>
 				<div class="gradient-black"></div>
                 <h1><?php the_title(); ?></h1>
-				<h3><?php the_content(); ?></h3>
-				<p class="taxonomy t-first">
-					<?php echo get_the_term_list( $post->ID, 'category', 'Category: ', ', ', '' ); ?>
-				</p>
-				<p class="taxonomy">
-					<?php echo get_the_term_list( $post->ID, 'post_tag', 'Tags: ', ', ', '' ); ?>
-				</p>
 			</header>
+			<div class="body-content">
+				<?php the_content(); ?>
+			</div>
 			<footer>
 				<?php wp_footer(); ?>
 			</footer>
